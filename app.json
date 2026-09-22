@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "TurboVPN",
+    "slug": "turbovpn-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#060913"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.turbovpn.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#060913"
+      },
+      "package": "com.turbovpn.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
