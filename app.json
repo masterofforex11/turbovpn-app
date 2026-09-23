@@ -1,29 +1,22 @@
 {
   "expo": {
-    "name": "TurboVPN",
-    "slug": "turbovpn-app",
+    "name": "Cloudflare IP Scanner",
+    "slug": "cloudflare-ip-scanner",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
+    "backgroundColor": "#0b0f19",
     "splash": {
-      "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#060913"
-    },
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.turbovpn.app"
+      "backgroundColor": "#0b0f19"
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#060913"
-      },
-      "package": "com.turbovpn.app"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "package": "com.cloudflare.ipscanner",
+      "versionCode": 1,
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE"
+      ]
     }
   }
 }
