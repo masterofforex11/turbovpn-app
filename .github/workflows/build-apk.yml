@@ -28,17 +28,18 @@ jobs:
         with:
           node-version: 20
 
-      - name: 📦 Install Node Modules
+      - name: 📦 Install Dependencies
         run: npm install
 
-      - name: ⚙️ Setup Android SDK
-        uses: android-actions/setup-android@v3
-
-      - name: 🚀 Prebuild Native Android Project with Expo
+      - name: 🚀 Prebuild Android with Expo
+        env:
+          ANDROID_HOME: /usr/local/lib/android/sdk
         run: npx expo prebuild --platform android --clean
 
-      - name: 🔨 Build Android Debug APK with Gradle
+      - name: 🔨 Build Android Debug APK
         working-directory: android
+        env:
+          ANDROID_HOME: /usr/local/lib/android/sdk
         run: |
           chmod +x gradlew
           ./gradlew assembleDebug --no-daemon
